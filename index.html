@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+
+    <link rel="stylesheet" href="/assets/app.css">
+    <link rel="stylesheet" href="/assets/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container header_content">
+            <div class="header_title">
+                Adrian<span>Ramirez</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobremi">Sobre mi</a></li>
+                    <li><a href="#objetivo">Objetivo Profesional</a></li>
+                    <li><a href="#experiencia">Experiencia laboral</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="vista_principal" id="sobremi">
+        <div class="vista_principal_imagen">
+            <img src="https://randomuser.me/api/portraits/men/18.jpg" alt=".">
+        </div>
+
+        <div class="vista_principal_descripcion">
+            <p>Hola!</p>
+            <h1>Soy Adrian Ramirez</h1>
+            <p class="descripcion"><strong>Email: </strong>adrian.ramirez@example.com</p>
+            <p><strong>Nacimiento: </strong>4/2/1970</p>
+            <p><strong>Direccion: </strong>2936 Timber Wolf Trail</p>
+            <p><strong>Telefono: </strong>(906) 748-8273</p>
+        </div>
+    </div>
+
+    <main class="container main" id="objetivo">
+        <h2 class="text-center">Objetivo Profesional</h2>
+        <p class="text-center" style="margin: 0 auto; padding: 0 50px;">Soy un profesional altamente motivado y comprometido con una sólida formación en Desarrollo Web. Mi objetivo es aplicar mis conocimientos y habilidades para contribuir de manera significativa al éxito de una organización dinámica y enfocada en la innovación. Estoy buscando oportunidades que me permitan crecer profesionalmente, asumir nuevos desafíos y trabajar en un entorno colaborativo donde pueda aportar soluciones creativas y estratégicas. Estoy emocionado por la posibilidad de formar parte de un equipo talentoso y ayudar a alcanzar los objetivos de la empresa mientras desarrollo mi carrera en Desarrollo Web.</p>
+    </main>
+
+    <main class="container main" id="experiencia">
+        <h2 class="text-center">Experiencia Laboral</h2>
+        <div class="card_container">
+            <div class="card">
+                <div class="card-details">
+                    <p class="text-title">Acme Solutions</p>
+                    <p class="text-body">Desarrollador de Software Junior</p>
+                </div>
+                <button class="card-button" id="masInfo1">Mas info</button>
+            </div>
+            <div class="card">
+                <div class="card-details">
+                    <p class="text-title">ABC Consulting</p>
+                    <p class="text-body">Analista de Datos</p>
+                </div>
+                <button class="card-button" id="masInfo2">Mas info</button>
+            </div>
+            <div class="card">
+                <div class="card-details">
+                    <p class="text-title">InnovateTech Startups</p>
+                    <p class="text-body">Coordinador de Marketing</p>
+                </div>
+                <button class="card-button" id="masInfo3">Mas info</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal_content display-none" id="modalContent1">
+        <div class="modal">
+            <div class="modal_header">
+                <h2><strong>Acme Solutions</strong></h2>
+                <p><strong>Cargo: </strong>Desarrollador de Software Junior</p>
+                <p><strong>Fecha: </strong>Junio 2019 - Diciembre 2020</p>
+            </div>
+            <div class="modal_body">
+                <p><strong>Descripcion</strong></p>
+                <p>Durante mi tiempo en Acme Solutions, trabajé en el desarrollo y mantenimiento de aplicaciones web.
+                </p>
+                <p>Mis responsabilidades incluyeron:</p>
+                <ul class="modal_list">
+                    <li>Contribuí al lanzamiento exitoso de una nueva función que aumentó la retención de usuarios en un 20%.</li>
+                    <li>Desarrollé un sistema de informes automatizados que redujo el tiempo de generación de informes en un 30%.</li>
+                    <li>Recibí el premio al "Empleado del Mes" en dos ocasiones por mi compromiso y contribuciones al equipo.</li>
+                </ul>
+            </div>
+            <div class="modal_footer">
+                <button type="button" class="btn_modal" id="btnCerrar1">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_content display-none" id="modalContent2">
+        <div class="modal">
+            <div class="modal_header">
+                <h2><strong>ABC Consulting</strong></h2>
+                <p><strong>Cargo: </strong>Analista de Datos</p>
+                <p><strong>Fecha: </strong>Marzo 2018 - Agosto 2019</p>
+            </div>
+            <div class="modal_body">
+                <p><strong>Descripcion</strong></p>
+                <p>En ABC Consulting, fui responsable de recopilar y analizar datos para proporcionar información clave a los clientes.</p>
+                <p>Mis responsabilidades incluyeron:</p>
+                <ul class="modal_list">
+                    <li>Recopilar datos de diversas fuentes y utilizar herramientas como Excel y SQL para realizar análisis detallados.</li>
+                    <li>Preparar informes y presentaciones claras y concisas para los clientes.</li>
+                    <li>Colaborar estrechamente con el equipo de consultoría para identificar oportunidades de mejora en los procesos empresariales de los clientes.</li>
+                </ul>
+            </div>
+            <div class="modal_footer">
+                <button type="button" class="btn_modal" id="btnCerrar2">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_content display-none" id="modalContent3">
+        <div class="modal">
+            <div class="modal_header">
+                <h2><strong>InnovateTech Startups</strong></h2>
+                <p><strong>Cargo: </strong>Coordinador de Marketing</p>
+                <p><strong>Fecha: </strong>Enero 2020 - Presente</p>
+            </div>
+            <div class="modal_body">
+                <p><strong>Descripcion</strong></p>
+                <p>En InnovateTech Startups, lidero la estrategia de marketing y promoción de nuestros productos y servicios tecnológicos.</p>
+                <p>Mis responsabilidades incluyeron:</p>
+                <ul class="modal_list">
+                    <li>Desarrollar y ejecutar campañas de marketing en línea y fuera de línea.</li>
+                    <li>Gestionar el presupuesto de marketing y realizar un seguimiento del ROI.</li>
+                    <li>Colaborar con equipos de diseño y desarrollo para crear contenido y materiales de marketing.</li>
+                    <li>Supervisar las redes sociales y la estrategia de contenidos.</li>
+                </ul>
+            </div>
+            <div class="modal_footer">
+                <button type="button" class="btn_modal" id="btnCerrar3">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h4 class="text-center">Sigueme en redes sociales</h4>
+            <div class="redes_sociales">
+                <p><a href="https://facebook.com">Facebook</a></p>
+                <p><a href="https://instagram.com">Instagram</a></p>
+                <p><a href="https://linkedin.com">Linkedin</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
